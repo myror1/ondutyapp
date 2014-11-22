@@ -1,0 +1,8 @@
+<h1>Welcome <%= @user.name%></h1>
+
+Here is the details of your schedules<br/>
+
+<%@user.schedules.each do |schedule|%>
+Date : <%= schedule.duty_date.strftime("%m/%d/%Y")%><br />
+Time : <%= schedule.duty_time.strftime("at %I:%M%p")%><br /><br />
+<% end %>

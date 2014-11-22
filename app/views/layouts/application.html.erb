@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onduty App</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="header">
+<h1>OnDuty Manager </h1>
+</div>
+<ul id="nav">
+<% if session[:user] %>
+<li><a href="/account/logout">Logout</a></li>
+<% end %>
+<% if session[:admin] %>
+<li><a href="/admin/logout">Admin Logout</a></li>
+<li><a href="/schedules/monthly">Monthly Schedules</a></li>
+<% end %>
+</ul>
+<div id="container">
+<div id="content">
+<%= yield %>
+</div>
+<div id="footer">
+</p>
+</div>
+</div>
+</body>
+</html>

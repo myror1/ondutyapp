@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  duty_date: 2014-10-07
+  duty_time: 2014-10-07 20:22:45
+  user_id: 
+
+two:
+  duty_date: 2014-10-07
+  duty_time: 2014-10-07 20:22:45
+  user_id: 
